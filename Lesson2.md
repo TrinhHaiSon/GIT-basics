@@ -28,7 +28,7 @@ That shows me the .git folder that was created by the initialize command and is 
 
 ![](Imges/image3.png)
 
-#### 2. **Get start**
+#### 2. **Getting started**
 
 Inside directory first_git_project, I'll create a new text file
 
@@ -43,3 +43,11 @@ Now, I want to tell Git to add all changes that've been made to entire project
 Then I commit that change which means telling git to put it in permanent memory
 
 `$ git commit -m "Initial commit"`
+
+![](Imges/imge6.png)
+
+So those are the basic process we're going to follow:
+
+* Make changes
+* Add the changes
+* commit the changes to the repository with a message
