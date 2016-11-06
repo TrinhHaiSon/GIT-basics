@@ -51,3 +51,18 @@ So those are the basic process we're going to follow:
 * Make changes
 * Add the changes
 * commit the changes to the repository with a message
+
+> ##### Note: there are some best practices for a commit message
+>
+> * Short single-line summery (less than 50 characters)
+> * Optionally followed by a blank line and a more complete description
+> * Keep each line to less than 72 characters
+> * Write commit messages in present tense, not past tense
+> * Bullet points are usually asterisks or hyphens
+> * Can add "ticket tracking numbers" from bugs or support requests
+> * Can develope shorthand for your organization
+
+#### 3. Viewing the commit log
+To show the commit messages, we use this command
+
+`$ git log`
