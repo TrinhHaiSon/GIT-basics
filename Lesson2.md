@@ -1,7 +1,7 @@
 Git basic commands
 ==================
-
-#### 1. **Initialize Git**
+#### 1. **The Three States**
+#### 2. **Initialize Git**
 
 To initialize Git on Linux, we open the terminal and type command `$ apt-get install git`
 
