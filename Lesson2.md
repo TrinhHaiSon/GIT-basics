@@ -1,6 +1,19 @@
 Git basic commands
 ==================
-#### 1. **The Three States**
+#### 1. **The Three States**  
+
+Git has three main states that your files can reside in: committed, modified and staged.  
+* Committed means that your data is safely saved in your local database.
+* Modified means that you have changed your file but haven't committed it to your database yet.
+* Staged means that you have marked a modified file in its current version to go into your next commit snapshots
+
+This leads us to the three main sections of a Git project: the Git directory, the working directory and the staging area
+
+![alt text](Imges/Screenshot from 2017-01-21 02-49-15.png)
+
+The Git directory is where Git store the metadata and object database for your project. This is the most important part of Git and it is what copied when you clone a repository from another project.  
+The working directory is a single checkout of a version of the project. These files are pulled out of the compressed database in the Git directory and place on your dish to be used or modified.  
+The staging area is a file, generally contained in your Git directory. That stores information about what will go into your next commit.
 #### 2. **Initialize Git**
 
 To initialize Git on Linux, we open the terminal and type command `$ apt-get install git`
