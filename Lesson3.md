@@ -27,4 +27,5 @@ Now, you add a new file to your project, suppose that a file named README, then 
 You  can  see  that  your  new  README  file  is  untracked,  because  it’s  under  the
 “Untracked  files”  heading  in  your  status  output.  Untracked  basically  meansthat Git sees a file you didn’t have in the previous snapshot (commit); Git won’t start including it in your commit snapshots until you explicitly tell it to do so. It
 does  this  so  you  don’t  accidentally  begin  including  generated  binary  files  orother files that you did not mean to include. You do want to start including RE-ADME, so let’s start tracking the file.  
+
 In order to begin tracking a new file, you use the command git add. To begin tracking the README file, you can run this:
