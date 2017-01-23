@@ -28,4 +28,16 @@ You  can  see  that  your  new  README  file  is  untracked,  because  it’s  u
 “Untracked  files”  heading  in  your  status  output.  Untracked  basically  meansthat Git sees a file you didn’t have in the previous snapshot (commit); Git won’t start including it in your commit snapshots until you explicitly tell it to do so. It
 does  this  so  you  don’t  accidentally  begin  including  generated  binary  files  orother files that you did not mean to include. You do want to start including RE-ADME, so let’s start tracking the file.  
 
-In order to begin tracking a new file, you use the command git add. To begin tracking the README file, you can run this:
+In order to begin tracking a new file, you use the command git add. To begin tracking the README file, you can run this:  
+![alt-text](Imges/Screenshot from 2017-01-23 23-05-12.png)  
+If you run your status command again, you can see that your README file is now tracked and staged to be committed:  
+![alt-text](Imges/Screenshot from 2017-01-23 23-12-21.png)  
+You  can  tell  that  it’s  staged  because  it’s  under  the  “Changes  to  be  committed” heading. If you commit at this point, the version of the file at the time you ran 'git add' is what will be in the historical snapshot. You may recall that when
+you ran git init earlier, you then ran git add (files) – that was to begin tracking  files  in  your  directory. The git add  command  takes  a  path  name  for either  a  file  or  a  directory;  if  it’s  a  directory,  the  command  adds  all  the  files  in that directory recursively.  
+
+#### 4. **Staging Modified Files**
+Let’s change a file that was already tracked. If you change a previously tracked file called README.md and then run your git status command again, you get something that looks like this:
+![alt-text](Imges/Screenshot from 2017-01-23 23-48-07.png)  
+The README.md file  appears  under  a  section  named  “Changes  not staged for commit” – which means that a file that is tracked has been modified in  the  working  directory  but  not  yet  staged.  To  stage  it,  you  run  the git add command. 
+git add is a multipurpose command – you use it to begin tracking new  files,  to  stage  files,  and  to  do  other  things  like  marking  merge-conflicted files as resolved. It may be helpful to think of it more as “add this content to the next commit” rather than “add this file to the project”.  Let’s run git add now to stage the 
+README.md file, and then run git status again:
