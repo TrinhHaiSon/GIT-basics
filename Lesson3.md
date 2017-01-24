@@ -40,4 +40,9 @@ Let’s change a file that was already tracked. If you change a previously track
 ![alt-text](Imges/Screenshot from 2017-01-23 23-48-07.png)  
 The README.md file  appears  under  a  section  named  “Changes  not staged for commit” – which means that a file that is tracked has been modified in  the  working  directory  but  not  yet  staged.  To  stage  it,  you  run  the git add command. 
 git add is a multipurpose command – you use it to begin tracking new  files,  to  stage  files,  and  to  do  other  things  like  marking  merge-conflicted files as resolved. It may be helpful to think of it more as “add this content to the next commit” rather than “add this file to the project”.  Let’s run git add now to stage the 
-README.md file, and then run git status again:
+README.md file, and then run git status again:  
+![alt-text](Imges/Screenshot from 2017-01-23 23-54-46.png)  
+Now, both README and README.md are in staged state and ready to the next commit. Suppose that you then make a change to README.md. Let see the status then:
+![atl-text](Imges/Screenshot from 2017-01-24 13-40-34.png)  
+It's a little weird that README.md is now in both staged and unstaged state. Now we know that Git stages files exactly as they were when you ran the 'git add' command. If you then changed something in that files, the changed version would haven't been in staged state yet and the version ready to be committed was still the same. Therefore, if you want to stage that change, you must run  the 'git add' command once more and README.md file is now in only one state:
+![alt-text](Imges/Screenshot from 2017-01-24 13-57-43.png)
