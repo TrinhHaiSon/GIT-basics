@@ -58,3 +58,4 @@ There are some rules for the patterns that you can put in .gitignore file as fol
 * End patterns with a forward slash (/) to specify a directory.
 * Negate a pattern by starting it with an exclamation point (!)
 
+#### 6. **Viewing your stage and unstaged changes**
